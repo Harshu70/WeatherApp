@@ -80,9 +80,9 @@ btn.addEventListener("click", function()
             img2.style.opacity = 0
             img3.style.opacity = 0
         }else if (descrip == 'mist') {
-            img5.style.opacity = 1
+            img5.style.opacity = 0
             img4.style.opacity = 0
-            img1.style.opacity = 0
+            img1.style.opacity = 1
             img2.style.opacity = 0
             img3.style.opacity = 0
         } else if(descrip == 'scattered clouds'){
@@ -91,12 +91,18 @@ btn.addEventListener("click", function()
             img1.style.opacity = 1
             img4.style.opacity = 0
             img3.style.opacity = 0
-        } else if(descrip == 'light rain' || descrip == 'rain'){
+        } else if(descrip == 'light rain' || descrip == 'rain' || descrip == 'moderate rain'){
             img4.style.opacity = 0
             img1.style.opacity = 0
             img5.style.opacity = 0
             img2.style.opacity = 0
             img3.style.opacity = 1
+        } else if(convert(temperature)<20){
+            img4.style.opacity = 0
+            img1.style.opacity = 0
+            img5.style.opacity = 1
+            img2.style.opacity = 0
+            img3.style.opacity = 0
         } else{
             img4.style.opacity = 0
             img1.style.opacity = 0
