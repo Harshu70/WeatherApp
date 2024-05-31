@@ -7,10 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>h111</p>
-    <h1>hyyy</h1>
-    <h3>harsh</h3>
-    <div>harshh</div>
-    <p>kjshdiu</p>
+    <div class="main">
+        <div class="nav">
+            <div class="logo">Weather</div>
+            <div class="inputs">
+                <input type="text" placeholder="Enter the City" id="cityInput">
+                <input type="submit" value="Submit" id="add">
+            </div>
+        </div>
+        <div class="temp">
+            <div class="img">
+                <img id="img1" src="img/clouds.gif" alt="">
+                <img id="img2" src="img/sun.gif" alt="">
+                <img id="img3" src="img/rain.gif" alt="">
+                <img id="img4" src="img/hot.gif" alt="">
+                <img id="img5" src="img/weather.gif" alt="">
+            </div>
+            <div class="value">
+                <div class="val">33&deg;C</div>
+                <div class="nam">Mostly Sunny</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="tempa box">
+                <h3>Temperatures</h3>
+                <p id="feel">Feels-Like -</p>
+                <p id="min">Min-Temperature -</p>
+                <p id="max">Max-Temperature -</p>
+            </div>
+            <div class="humi box">
+                <h3>Humidity Info</h3>
+                <p id="humii">Humidity -</p>
+                <p id="press">Pressure -</p>
+                <p id="wind">Wind -</p>
+            </div>
+            <div class="time box">
+                <h3>Important Times</h3>
+                <p id="rise">Sun-rise -</p>
+                <p id="sett">Sun-Set -</p>
+                <p id="visi">Visibility -</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
